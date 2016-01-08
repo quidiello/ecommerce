@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  background-color: $backgroundColor;
+}
+
+header {
+  height: $headerHeight;
+  background-color: $primaryColorBackground;
+  img {
+    height: 100%;
+    padding-left: 20px;
+  }
+  div {
+    float: right;
+    height: $headerHeight;
+    font-size: 1.5em;
+    padding-right: 1em;
+    i {
+      color: $primaryColor;
+      line-height: $headerHeight !important;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: $footerHeight;
+  background-color: $footerColorBackground;
+  color: $primaryColor;
+  display: table;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+.wrapper {
+  min-height: calc(100% - #{$headerHeight} - #{$footerHeight});
+  margin: 1rem auto;
+}
+
+main {
+  background-color: green;
+}
