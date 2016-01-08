@@ -53,7 +53,8 @@ function mobile() {
 
 function tablet() {
   $('nav').parent().css({
-    padding: 0
+    padding: 0,
+    width: "100%"
   });
   if (!$('.menu').length) {
     var $menu = $('<div class="menu"><i class="fa fa-align-justify"></i></div>');
