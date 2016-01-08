@@ -176,3 +176,59 @@ nav li i {
     font-weight: bold;
     font-size: 1.4rem;
     text-align: right; }
+
+@media screen and (max-width: 480px) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    width: 100%; }
+  nav {
+    margin: 0;
+    display: none; }
+  div.wrapper {
+    padding: 0;
+    margin: 0; }
+  header div.menu {
+    float: left;
+    height: 4rem;
+    font-size: 1.5em;
+    padding-left: 1em;
+    margin-right: -1em;
+    cursor: pointer; } }
+
+@media screen and (max-width: 768px) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    width: 100%; }
+  nav {
+    margin: 0;
+    display: none; }
+  div.wrapper {
+    padding: 0;
+    margin: 0; }
+  header div.menu {
+    float: left;
+    height: 4rem;
+    font-size: 1.5em;
+    padding-left: 1em;
+    margin-right: -1em;
+    cursor: pointer; } }
