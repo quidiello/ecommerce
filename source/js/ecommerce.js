@@ -42,28 +42,36 @@ $(function() {
 });
 
 function mobile() {
-  $('nav').parent().css({
-    padding: 0
-  });
+  $('nav').parent().remove("tablet");
+  $('nav').parent().addClass("mobile");
   if (!$('.menu').length) {
     var $menu = $('<div class="menu"><i class="fa fa-align-justify"></i></div>');
     $menu.prependTo($('header'));
+    $('nav').css({
+      display: "none"
+    });
   }
 }
 
 function tablet() {
-  $('nav').parent().css({
-    padding: 0,
-    width: "100%"
-  });
+  $('nav').parent().remove("mobile");
+  $('nav').parent().addClass("tablet");
   if (!$('.menu').length) {
     var $menu = $('<div class="menu"><i class="fa fa-align-justify"></i></div>');
     $menu.prependTo($('header'));
+    $('nav').css({
+      display: "none"
+    });
   }
 }
 
 function computer() {
+  $('nav').parent().removeClass("tablet mobile");
+  $('nav').css({
+    display: "block"
+  });
   if ($('.menu').length) {
     $('.menu').remove();
+    menu = false;
   }
 }

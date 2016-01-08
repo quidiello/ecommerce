@@ -205,6 +205,9 @@ nav li i {
     margin-right: -1em;
     cursor: pointer; } }
 
+.mobile {
+  padding: 0; }
+
 @media screen and (max-width: 768px) {
   .column-1 {
     width: 16.6666666667%; }
@@ -243,3 +246,7 @@ nav li i {
     padding-left: 1em;
     margin-right: -1em;
     cursor: pointer; } }
+
+.tablet {
+  padding: 0;
+  width: 100%; }
